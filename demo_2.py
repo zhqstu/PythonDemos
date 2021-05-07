@@ -41,7 +41,7 @@ axes = fig.add_subplot(111)     # axes:坐标轴（实际画图的地方）
 axes.set_title('PI is : %f' % pi)
 
 for i in range(len(s)):
-    if s[i] == 1:
+    if s[i] == 1:       # 取数组s[i]等于半径1
         axes.plot(x[i], y[i], 'ro', markersize=2, color='red')      # 园内红色
     else:
         axes.plot(x[i], y[i], 'ro', markersize=2, color='yellow')      # 园外黄色
